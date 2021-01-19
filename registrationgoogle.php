@@ -1,0 +1,140 @@
+<?php
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register- Social Conclave 2020</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Raleway:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+ <link href="./styles/all.min.css" rel="stylesheet">
+    <link href="./styles/fontawesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/Logos/favicon3.ico" />
+    <!-- importing resets css sheets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
+</head>
+<body>
+    <form id="Registration-Form">
+        <div class="div" id="hideDiv">
+            <h1 class="registrationtitle" >Registration Form</h1>
+            <p class="bodycopy1" style="margin-top: 0.8rem;">Please fill in this form to register.</p>
+            <label>
+                <b class="regtitle">Full Name</b>
+            </label>
+            <input required name="fname" placeholder="Enter full name" type="text"/>
+            <label>
+                <b class="regtitle">Email ID</b>
+            </label>
+            <input required name="email" placeholder="Enter Email" type="email"/>
+            <label>
+                <b class="regtitle">Mobile no.</b>
+            </label>
+            <input required name="mobilenum" maxlength="10" placeholder="Enter 10 digit Mobile number" type="text"/>
+            <label>
+                <b class="regtitle">Date of Birth</b>
+            </label>
+            <input required name="bday" type="Date"/>
+            <br>
+            <label>
+                <b class="regtitle">Gender</b>
+            </label>
+            <input type="radio" name="gender" value="male" required>Male
+            <input type="radio" name="gender" value="female">Female
+            <input type="radio" name="gender" value="others">Others
+            <label>
+                <b class="regtitle">College</b>
+            </label>
+            <input required name="college" placeholder="Name of school/college" type="text"/>
+            <label>
+                <b class="regtitle">Course</b>
+            </label>
+            <input required name="course" placeholder="Your course and stream" type="text"/><br>
+            <label>
+                <b class="regtitle">Topic preference 1</b>
+            </label><br>
+            <select required id="pref1" name="pref1">
+                <option value="-1" disabled selected>Select your first preference of topic</option>
+                <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+            </select><br>
+            <label>
+                <b class="regtitle">Topic preference 2</b>
+            </label><br>
+            <select required id="pref2" name="pref2">
+                <option value="-1" disabled selected>Select your second preference of topic</option>
+                <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+            </select><br>
+            <label>
+                <b class="regtitle">Topic preference 3</b>
+            </label><br>
+            <select required class="form-control haha" id="pref3" name="pref3">
+                <option value="-1" disabled selected>Select your third preference of topic</option>
+                <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+            </select><br>
+            <label>
+                <b class="regtitle">Topic preference 4</b>
+            </label><br>
+            <select required class="form-control haha" id="pref4" name="pref4">
+                <option value="-1" disabled selected>Select your fourth preference of topic</option>
+                <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+            </select><br>
+            <label>
+                <b class="regtitle">Past Experience</b>
+            </label>
+            <input name="pastexp" placeholder="Past experience in social service or public speaking" type="text"/><br>
+            <label>
+                <b class="regtitle">Will you require accomodation?</b>
+            </label><br>
+            <input name="accomodation" type="radio" value="yesacc" required>Yes
+            <input name="accomodation" type="radio" value="noacc">No
+            <label><br>
+                <b class="regtitle">Arriving with a team?</b>
+            </label><br>
+            <input name="teamarrival" type="radio" value="yesteam" required>Yes
+            <input name="teamarrival" type="radio" value="noteam">No<br>
+            <p class="bodycopy1" style="text-align: left;">
+                *Delegates please note that each team is expected to have 4 to 7 members and <b>each</b> memeber has to register individually.
+                <br>If you wish to register individually or do not have a team, we will assign one to you based on your preference.
+            </p>
+            <label>
+                <b class="regtitle">Team name (If arriving with one)</b>
+            </label>
+            <input required name="teamname" placeholder="Anything unique that will identify your team" type="text"/>
+            <div class="clearfix row">
+                <button onclick="thankyou.html" type="submit">Register</button>
+            </div>
+        </div>
+    </form>     
+</body>
+</html>
+
+<!--do not change this area-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJv-MOUyOefoPvaFDkHadLhmk5skIaFBd-BVlbXPdz2onW5k9o/exec'
+  const form = document.forms['Registration-Form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => window.location.replace('thankyou.html'))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- importing fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Raleway:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <!-- font awesome icons stylesheet -->
+    <link href="./styles/all.min.css" rel="stylesheet">
+    <link href="./styles/fontawesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/Logos/favicon3.ico" />
+    <!-- importing resets css sheets -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <!-- importing custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Agendas- Social Conclave 2020</title>
+</head>
+<body>
+    <header>
+
+        <!-- navigation bar -->
+        <nav class="navbar">
+
+            <div class="logos">
+                <a href="index.html" class="sclogocontainer">
+                    <img class="sclogopng" src="images/Logos/Social Concalve/socialconclaveogmin.png" alt="Social Conclave Logo" />
+                </a>
+                <a href="https://www.facebook.com/SocialImpactMPSTME/" class="silogocontainer">
+                    <img class="silogopng" src="images/Logos/Social Impact/socialimpactogmin.png" alt="Social Impact Logo" />
+                </a>
+            </div>
+
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <svg class="ham hamRotate ham1" viewbox= "0 0 100 100" width="60">
+                <path
+                      class="line top"
+                      d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                      class="line middle"
+                      d="m 30,50 h 40" />
+                <path
+                      class="line bottom"
+                      d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+              </svg>
+        </a>
+
+        <!-- Slider Main Menu -->
+        <div class="slider-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li onclick="toggleAboutUs()"><a>ABOUT US</a></li>
+                <li class="aboutuslist">
+                    <a href="./teamconclave2020.html">Team Social Conclave</a><br/>
+                    <a href="./letterfromfounder.html">Letter from Founder</a><br/>
+                    <!-- <a href="./teamconclave2019.html">Team Social Conclave 2019</a><br/> -->
+                    <a href="https://www.facebook.com/SocialImpactMPSTME/">Social Impact</a>
+                </li>
+                <li onclick="toggleAgendas()"><a>AGENDAS</a></li>
+                <li class="specificagendas">
+                    <a href="./agendas.html#jcp" onclick="toggleNav()">Juvenile Crime and Prevention</a><br/>
+                    <a href="./agendas.html#ypsm"
+                    onclick="toggleNav()">Youth, Privacy and Social Media</a><br/>
+                    <a href="./agendas.html#fisw"
+                    onclick="toggleNav()">Financial Independence and Security of Women</a><br/>
+                    <a href="./agendas.html#ca"
+                    onclick="toggleNav()">Climate Action</a><br/>
+                    <a href="./agendas.html#riu"
+                    onclick="toggleNav()">Rural illetracy and Unemployment</a><br/>
+                </li>
+                <li><a href="./registration.php">REGISTER</a></li>
+                <li><a href="./faqs.html">FAQ's</a></li>
+                <li><a href="./contactus.html">CONTACT US</a></li>
+                <!-- <li><a href="https://www.facebook.com/SocialImpactMPSTME/">SOCIAL IMPACT</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="particles"></div>
+        <div class="flexcontainer">
+            <div class="spacer"></div>
+            <div class="container horizontal-scroll-wrapper" >
+                <!-- <div class="agendasfullview"> -->
+                    <!-- <div class="intro">
+                        <h1>Agendas</h1>
+                        <video src="./Resources/All Agendas.mp4"></video>
+                    </div> -->
+                    <!-- <section class="generalsec jcp" > -->
+                        <div style="height: 90px; " id="jcp"></div>
+                        <div class="photocontaineragenda big jcp  "></div>
+                        <div class="topictext">
+                            <h1 class="topicname">Juvenile Crime and Prevention</h1>
+                            <!-- <p class="topicabout" data-scroll>
+                                This agenda encompasses the children and teenagers (below 18) who have committed any kind of criminal act. The aim is to understand why did these minors commit such an offense and what can we do to reduce the same from happening in the future.
+                            </p> -->
+                            <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+                            <a href="./juvenilecrimeprevention.html" class="learnbtn">Learn More</a>
+                            <!-- <a href="./registration.html" class="registerbtn">Register Now</a> -->
+                            </div>
+                        </div>
+                    <!-- </section> -->
+                    <!-- <section class="generalsec ypsm"> -->
+                        <div style="height: 90px;" id="ypsm"></div>
+                        <div class="photocontaineragenda big ypsm"></div>
+                        <div class="topictext">
+                            <h1 class="topicname">Youth, Privacy and Social Media</h1>
+                            <!-- <p class="topicabout" data-scroll>
+                                This agenda will discuss the impact of various social media and online platforms on the youth privacy and how can it affect ones reputation in the long run. It will talk about how one loses their personal information to the online world without knowing.
+                            </p> -->
+                            <a href="./youthprivacy.html" class="learnbtn">Learn More</a>
+                        </div>
+                    <!-- </section> -->
+                    <!-- <section class="generalsec fisw"> -->
+                        <div style="height: 90px;" id="fisw"></div>
+                        <div class="photocontaineragenda big fisw"></div>
+                        <div class="topictext">
+                            <h1 class="topicname">Financial Independence and Security of Women</h1>
+                            <!-- <p class="topicabout" data-scroll>
+                                The crime rates against women in the country have only risen to a great extent. Women think twice before stepping out of their homes, especially at the night. Women's empowerment is the way or a social action in which women elaborate and recreate what it is to be in a circumstance that they previously were denied, especially in entrepreneurship.
+                            </p> -->
+                            <a href="./financialindependence.html" class="learnbtn">Learn More</a>
+                        </div>
+                    <!-- </section> -->
+                    <!-- <section class="generalsec ca"> -->
+                        <div style="height: 90px;" id="ca"></div>
+                        <div class="photocontaineragenda big ca"></div>
+                        <div class="topictext">
+                            <h1 class="topicname">Climate Action</h1>
+                            <!-- <p class="topicabout" data-scroll>
+                                This agenda targets the factors that lead to change in climatic conditions and focuses on how this unwanted change is affecting our ecosystem.
+                            </p> -->
+                            <a href="./climateaction.html" class="learnbtn">Learn More</a>
+                        </div>
+                    <!-- </section> -->
+                    <!-- <section class="generalsec riu"> -->
+                        <div style="height: 90px;" id="riu"></div>
+                        <div class="photocontaineragenda big riu"></div>
+                        <div class="topictext">
+                            <h1 class="topicname">Rural Illiteracy and Unemployment</h1>
+                            <!-- <p class="topicabout" data-scroll>
+                                Over one-third of Indian population living in rural areas is illiterate even after 68 years of independence. 
+                                Agriculture forms the mainstay of rural population. But, not enough employment is available. This leads to Unemployment, which takes three forms open seasonal and disguised.
+                            </p> -->
+                            <a href="./ruralilletracy.html" class="learnbtn">Learn More</a>
+                        </div>
+                    <!-- </section> -->
+                <!-- </div> -->
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <!-- <section class="agendacontainer">
+            <div class="agendacontainer jcp1"></div>
+            <h1 class="agendatitle">Juvenile Crime and Prevention</h1>
+        </section> -->
+        <footer>
+            <div class="footercontents">
+                <div class="footerlogos">
+                    <a href="https://www.instagram.com/socialconclave/"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/socialconclave/"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://twitter.com/social_conclave/"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="mailto:socialconclave2018@gmail.com?subject=Social Conclave 2020"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+                <h1 class="endlabel">© 2020 Copyright: Social Conclave</h1>
+            </div>
+        </footer>
+    </main>
+    
+    <!-- importing main javascript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js" integrity="sha256-ZTEnMVwBY082yM/d9tFkglZux9pVgwfOAg6HD4reObU=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js" integrity="sha256-XBVALc3QsDSQiDtiaBwNZ2rxCJTHzlUhhlDQ84J8bw8=" crossorigin="anonymous"></script> -->
+     <!-- Importing ParticleGround -->
+     <script src="./scripts/jquery.particleground.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.js" integrity="sha256-d1jCwrfgxmz4d6Jdu06blJKNVa/lkCdD2hxx8LLl83o=" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>

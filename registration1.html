@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- importing fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900|Raleway:300,400,500,600,700,900&display=swap" rel="stylesheet">
+    <!-- font awesome icons stylesheet -->
+    <link href="./styles/all.min.css" rel="stylesheet">
+    <link href="./styles/fontawesome.min.css" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="images/Logos/favicon.ico" />
+    <!-- importing resets css sheets -->
+    <link rel="stylesheet" type="text/css" href="styles/reset.css">
+    <!-- importing custom stylesheet -->
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <title>Register- Social Conclave 2020</title>
+</head>
+<body>
+    <header>
+
+        <!-- navigation bar -->
+        <nav class="navbar">
+
+            <div class="logos">
+                <a href="index.html" class="sclogocontainer">
+                    <img class="sclogopng" src="images/Logos/Social Concalve/socialconclaveogmin.png" alt="Social Conclave Logo" />
+                </a>
+                <a href="https://www.facebook.com/SocialImpactMPSTME/" class="silogocontainer">
+                    <img class="silogopng" src="images/Logos/Social Impact/socialimpactogmin.png" alt="Social Impact Logo" />
+                </a>
+            </div>
+
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <svg class="ham hamRotate ham1" viewbox= "0 0 100 100" width="60">
+                <path
+                      class="line top"
+                      d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                <path
+                      class="line middle"
+                      d="m 30,50 h 40" />
+                <path
+                      class="line bottom"
+                      d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+              </svg>
+        </a>
+
+        <!-- Slider Main Menu -->
+        <div class="slider-menu">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li onclick="toggleAboutUs()"><a>ABOUT US</a></li>
+                <li class="aboutuslist">
+                    <a href="./teamconclave2020.html">Team Social Conclave</a><br/>
+                    <a href="./letterfromfounder.html">Letter from Founder</a><br/>
+                    <!-- <a href="./teamconclave2019.html">Team Social Conclave 2019</a><br/> -->
+                    <a href="https://www.facebook.com/SocialImpactMPSTME/">Social Impact</a>
+                </li>
+                <li onclick="toggleAgendas()"><a>AGENDAS</a></li>
+                <li class="specificagendas">
+                    <a href="./agendas.html#jcp" onclick="toggleNav()">Juvenile Crime and Prevention</a><br/>
+                    <a href="./agendas.html#ypsm"
+                    onclick="toggleNav()">Youth, Privacy and Social Media</a><br/>
+                    <a href="./agendas.html#fisw"
+                    onclick="toggleNav()">Financial Independence and Security of Women</a><br/>
+                    <a href="./agendas.html#ca"
+                    onclick="toggleNav()">Climate Action</a><br/>
+                    <a href="./agendas.html#riu"
+                    onclick="toggleNav()">Rural illetracy and Unemployment</a><br/>
+                </li>
+                <li><a href="./registration.html">REGISTER</a></li>
+                <li><a href="./faqs.html">FAQ's</a></li>
+                <!-- <li><a href="https://www.facebook.com/SocialImpactMPSTME/">SOCIAL IMPACT</a></li> -->
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div id="particles"></div>
+        <div class="flexcontainer">
+            <div class="spacer"></div>
+            <div class="container">
+                <form style="margin-top: 80px;" id="Registration-Form">
+                    <div class="div" id="hideDiv">
+                        <h1 class="registrationtitle" >Registration Form</h1>
+                        <p class="bodycopy1" style="margin-top: 0.6rem;">Please fill in this form to register.</p>
+                        <label for="fullname">
+                            <b class="regtitle">Full Name:</b>
+                        </label>
+                        <input id="fullname" required name="fname" placeholder="Enter full name" type="text"/>
+
+
+                        <label for="emailid">
+                            <b class="regtitle">Email ID:</b>
+                        </label>
+                        <input id="emailid" required name="email" placeholder="Enter Email" type="email"/>
+
+                        <label for="mobileno">
+                            <b class="regtitle">Mobile No:</b>
+                        </label>
+                        <input id="mobileno" required name="mobilenum" maxlength="10" placeholder="Enter 10 digit Mobile number" type="text"/>
+
+
+                        <label for="dob">
+                            <b class="regtitle">Date of Birth:</b>
+                        </label>
+                        <input id="dob" required name="bday" type="Date"/>
+                        <br>
+                        <label>
+                            <b class="regtitle">Gender: </b>
+                        </label>
+                        <input style="margin-bottom: 30px;" class="inputtitle" type="radio" name="gender" value="male" required>Male
+                        <input type="radio" name="gender" value="female">Female
+                        <input type="radio" name="gender" value="others">Others
+                        <br/>
+                        <label>
+                            <b class="regtitle">College:</b>
+                        </label>
+                        <input required name="college" placeholder="Name of school/college" type="text"/>
+                        <label>
+                            <b class="regtitle">Course:</b>
+                        </label>
+                        <input required name="course" placeholder="Your course and stream" type="text"/><br>
+
+
+                        <label >
+                            <b class="regtitle">Topic preference 1:</b>
+                        </label>
+                        <select class="selectoption" required id="pref1" name="pref1">
+                            <option value="-1" disabled selected>Select your first preference of topic</option>
+                            <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                            <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                            <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                            <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                            <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+                        </select><br>
+
+                        <label>
+                            <b class="regtitle">Topic preference 2:</b>
+                        </label>
+                        <select class="selectoption" required id="pref2" name="pref2">
+                            <option value="-1" disabled selected>Select your second preference of topic</option>
+                            <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                            <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                            <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                            <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                            <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+                        </select><br>
+
+                        <label>
+                            <b class="regtitle">Topic preference 3:</b>
+                        </label>
+                        <select class="selectoption" required class="form-control haha" id="pref3" name="pref3">
+                            <option value="-1" disabled selected>Select your third preference of topic</option>
+                            <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                            <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                            <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                            <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                            <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+                        </select><br>
+
+                        <label>
+                            <b class="regtitle">Topic preference 4:</b>
+                        </label>
+                        <select class="selectoption" required class="form-control haha" id="pref4" name="pref4">
+                            <option value="-1" disabled selected>Select your fourth preference of topic</option>
+                            <option value="Rural Illiteracy and Unemployment" name="topic1">Rural Illiteracy and Unemployment</option>
+                            <option value="Financial Independance and Security of Women" name="topic2">Financial Independance and Security of Women</option>
+                            <option value="Juvenile Crime and Prevention" name="topic3">Juvenile Crime and Prevention</option>
+                            <option value="Youth, Privacy and Social Media" name="topic4">Youth, Privacy and Social Media</option>
+                            <option value="Climate Action (School Topic)" name="topic5">Climate Action (School Topic)</option>
+                        </select><br>
+
+                        <label>
+                            <b class="regtitle">Past Experience:</b>
+                        </label>
+                        <input name="pastexp" placeholder="Past experience in social service or public speaking" type="text"/><br>
+                        <label>
+                            <b class="regtitle">Will you require accomodation?</b>
+                        </label>
+                        <input name="accomodation" type="radio" value="yesacc" required>Yes
+                        <input name="accomodation" type="radio" value="noacc">No
+                        <label><br>
+                            <b class="regtitle">Arriving with a team?</b>
+                        </label>
+                        <input style="margin-top: 40px;" name="teamarrival" type="radio" value="yesteam" required>Yes
+                        <input name="teamarrival" type="radio" value="noteam">No<br>
+                        <p class="bodycopy1" style="text-align: left; margin-top: 20px; font-style: italic;">
+                            *Delegates please note that each team is expected to have 4 to 7 members and <b style="color: blue;">each</b> memeber has to register individually.
+                            <br>If you wish to register individually or do not have a team, we will assign one to you based on your preference.
+                        </p>
+                        <label>
+                            <b class="regtitle">Team name (If arriving with one):</b>
+                        </label>
+                        <input required name="teamname" placeholder="Anything unique that will identify your team" type="text"/>
+                        <div id="payment">
+                            <label>
+                                <b class="regtitle">Payment:</b>
+                            </label>
+                            <p class="bodycopy1" style="text-align: left; margin-top: 20px; font-style: italic;">
+                                Delegates would be required to pay <b style="color: blue;">₹1200 (INR)</b> for all the three days which would include the conference,field visit, and other events. They would be registered only upon successful payment of the full amount.
+                            </p>
+                            <input type="radio" name="payment" id="PayTM" value="Paytm" required>
+                            <label for="paytm">Paytm <img src="./images/payments/paytmqrcode.jpg" width="50px" height="50px" alt="PayTM to +91-" /></label>
+                            <input type="radio" name="payment" id="UPI" value="UPI"/>
+                            <label for="upi">UPI <img src="upi_qr.JPG" width="50px" height="50px" alt="UPI to +91-" /></label><br>
+                            <label >
+                                <b class="regtitle transid">Transaction ID:</b>
+                            </label>
+                            <input required name="transid" placeholder="Payment transaction ID" type="text"/>
+                        </div>
+                        <div class="clearfix row">
+                            <button class="signupbtn" onclick="thankyou.html" type="submit">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="spacer"></div>
+        </div>
+        <footer>
+            <div class="footercontents">
+                <div class="footerlogos">
+                    <a href="https://www.instagram.com/socialconclave/"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="https://www.facebook.com/socialconclave/"><i class="fab fa-facebook-f fa-lg"></i></a>
+                    <a href="https://twitter.com/social_conclave/"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="mailto:socialconclave2018@gmail.com?subject=Social Conclave 2020"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+                <h1 class="endlabel">© 2020 Copyright: Social Conclave</h1>
+            </div>
+        </footer>
+    </main>
+    <!-- Importing ParticleGround -->
+    <script src="./scripts/jquery.particleground.min.js"></script>
+    <script src="./scripts/app.js"></script> 
+<!--do not change this area-->
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwF3tjb4NZREg3uu81Ss1D0hR6wOomb5dDn_BsfAMXfEGATKLh9/exec'
+  const form = document.forms['Registration-Form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => window.location.replace('thankyou.html'))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>    
+    </body>
+</html>
+
