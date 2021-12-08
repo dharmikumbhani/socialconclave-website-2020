@@ -1453,6 +1453,7 @@ input[type=date]:focus {
 
 /* Swiper */
 .timeline {
+    overflow: hidden;
     width: 100%;
     background-color: #fff;
     box-shadow: 0 5px 25px 5px rgba(0, 0, 0, .2);
